@@ -2,7 +2,7 @@
 y luego mostrarlo por 'Alert' al presionar el botón  'mostrar'*/
 function mostrar()
 {
-	
+    alert("Usted se llama " + document.getElementById("elNombre").value);
 }
 
 
