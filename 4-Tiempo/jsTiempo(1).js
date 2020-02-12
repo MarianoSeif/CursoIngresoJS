@@ -1,3 +1,16 @@
+
+function inicio()
+{
+	setInterval(function(){
+		alert("Bienvenido");
+	}, 3000);
+	
+
+}
+
+
+/*
+
 var miIntervalo ;
 
 function inicio()
@@ -13,3 +26,4 @@ function SegundosEnElAire() {
 
 }//FIN DE LA FUNCIÓN SegundosEnElAire
 
+*/

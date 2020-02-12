@@ -1,3 +1,53 @@
+
+var timer;
+
+function inicio()
+{
+	var contador = 1;
+	timer = setInterval(function(){
+		alert("Bienvenido "+contador+" veces");
+		contador ++;
+	}, 2000);
+}
+
+function fin()
+{
+	console.log(timer);
+	clearInterval(timer);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 var miIntervalo ;
 var contador=0;
 
@@ -20,4 +70,4 @@ function fin()
 	alert("function fin.");
 	clearInterval(miIntervalo);
 
-}//FIN DE LA FUNCIÓN fin
+}//FIN DE LA FUNCIÓN fin*/
