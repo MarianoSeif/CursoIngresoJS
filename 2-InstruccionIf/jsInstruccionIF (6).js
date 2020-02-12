@@ -4,7 +4,7 @@ function mostrar()
 
 var edad = parseInt(document.getElementById("edad").value);
 if (edad<0){
-    alert("ingrese una edad!")
+    alert("ingrese una edad correcta!")
 }else if(edad<13){
     alert("niño!");
 }else if(edad>=13 && edad<=17){
