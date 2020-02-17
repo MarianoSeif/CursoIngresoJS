@@ -1,5 +1,47 @@
 function mostrar()
 {
+	var vector = new Array();
+	
+	vector[0] = "Luis";
+	vector[1] = "Pedro";
+	vector[2] = "Carlos";
+	vector[3] = "Juan";
+	vector[4] = "Jose";
+
+	for(i=0; i<5; i++){
+		document.write("Posicion ", i,": ", vector[i], "<br>");
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+function mostrar()
+{
 
 	var miArray = new Array();
 
@@ -22,4 +64,4 @@ document.write("El contenido del vector es: <br>");
 
 
 
-}//FIN DE LA FUNCIÓN
+}//FIN DE LA FUNCIÓN */

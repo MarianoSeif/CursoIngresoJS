@@ -1,3 +1,45 @@
+
+function mostrar()
+{
+	var i;
+	var vector = new Array();
+
+	for(i=0; i<5; i++){
+		vector[i] = parseInt(prompt("Ingrese numero: "));
+	}
+
+	for(i=0; i<5; i++){
+		document.write("Posicion ", i,": ", vector[i], "<br>");
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
 function mostrar()
 {
 
@@ -20,4 +62,4 @@ function mostrar()
 
 
 
-}//FIN DE LA FUNCIÓN
+}//FIN DE LA FUNCIÓN */

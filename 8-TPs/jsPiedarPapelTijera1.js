@@ -1,3 +1,39 @@
+
+var eleccionMaquina = Math.floor(Math.random()*3) + 1;
+
+function piedra()
+{
+
+}
+
+function papel()
+{
+    
+}
+
+function tijera()
+{
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
 /*Al comenzar el juego generaremos un número 
 RANDOM del 1 al 3 para la selección de la máquina, 
 siendo 1 para “piedra”, el 2 para “papel” y 3 para “tijera”.
@@ -26,4 +62,4 @@ function tijera()
 {
 	
 
-}//FIN DE LA FUNCIÓN
+}//FIN DE LA FUNCIÓN */

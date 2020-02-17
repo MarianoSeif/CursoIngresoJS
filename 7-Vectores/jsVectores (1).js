@@ -1,3 +1,21 @@
+
+function mostrar()
+{
+	var i;
+	var vector = new Array();
+
+	for(i=0; i<10; i++){
+		vector[i] = Math.round(Math.random()*10);
+	}
+
+	for(i=0;i<10;i++){
+	    document.write("Posicion ", i,": ", vector[i], "<br>");
+	}
+
+}
+
+
+/* 
 function mostrar()
 {
 
@@ -26,4 +44,4 @@ document.write("El contenido del vector es: <br>");
 
 
 
-}//FIN DE LA FUNCIÓN
+}//FIN DE LA FUNCIÓN */
