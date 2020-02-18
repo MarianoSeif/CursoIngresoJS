@@ -2,9 +2,15 @@ function mostrar()
 {
 	var contador=0;
 	var acumulador=0;
+	var numeroIngresado;
 
 	while(contador<5){
-		acumulador += parseInt(prompt("Ingrese numero"));
+		numeroIngresado = parseInt(prompt("Ingrese nuevamente: "));
+		while (isNaN(numeroIngresado)){
+			numeroIngresado = parseInt(prompt("Ingrese nuevamente: "));
+		}
+		console.log(numeroIngresado);
+		acumulador += numeroIngresado;
 		contador ++;
 	}
 

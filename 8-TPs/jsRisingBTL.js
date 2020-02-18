@@ -9,5 +9,44 @@ F.	Nacionalidad, “A” para argentinos, “E” para extranjeros, “N” para
  */
 function ComenzarIngreso () 
 {
- 
+    //EDAD
+    var edad;
+    do{
+        edad = parseInt(prompt("Ingrese la edad"));
+        console.log("EDAD: ", edad);
+    }while(edad<18 || edad>90 || isNaN(edad));
+    
+    document.getElementById("Edad").value = edad;
+
+    //SEXO
+    do{
+        sexo = (prompt("Ingrese el sexo")).toLocaleLowerCase();
+        console.log(sexo);
+    }while(sexo!="f" && sexo!="m");
+
+    if(sexo == "f"){
+        document.getElementById("Sexo").value = "Femenino";
+    }else{
+        document.getElementById("Sexo").value = "Masculino";
+    }
+
+    do{
+        estadoCivil = parseInt(prompt("Ingrese estado civil"));
+    }while(estadoCivil<1 || estadoCivil>4);
+
+    switch(estadoCivil){
+        case 1:
+            document.getElementById("EstadoCivil").value = "Soltero";
+            break;
+        case 2:
+            document.getElementById("EstadoCivil").value = "Casado";
+            break;
+        case 3:
+            document.getElementById("EstadoCivil").value = "Divorciado";
+            break;
+        case 4:
+            document.getElementById("EstadoCivil").value = "Viudo";
+            break;
+    }
+
 }

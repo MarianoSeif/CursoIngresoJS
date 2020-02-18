@@ -1,29 +1,24 @@
+var numeroMaquina = Math.round(Math.random()*100);
+var intentos = 0;
+
 function comenzar()
 {
-  console.log("inciando");
-  window.numeroMaquina = Math.round(Math.random()*100);
-  console.log(window.numeroMaquina);
-   
+  console.log(numeroMaquina);
 }
 
 function verificar()
 {
-  console.log("verificando");
-  window.intentos = 0;
+  intentos++;
   var numero = parseInt(document.getElementById("numero").value);
-  if(numero == numeroMaquina){
-    alert("ganó en ", intentos, "intentos");
+  if(numero < numeroMaquina){
+    alert("falta...");
+  }else if (numero >numeroMaquina){
+    alert("ud se pasó");
   }else{
-    window.intentos++;
+    alert("ud ganó");
   }
+  document.getElementById("intentos").value = intentos;
 }
-
-
-
-
-
-
-
 
 
 
