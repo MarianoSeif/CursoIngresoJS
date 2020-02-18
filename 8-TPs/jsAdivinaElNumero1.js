@@ -1,3 +1,46 @@
+function comenzar()
+{
+  console.log("inciando");
+  window.numeroMaquina = Math.round(Math.random()*100);
+  console.log(window.numeroMaquina);
+   
+}
+
+function verificar()
+{
+  console.log("verificando");
+  window.intentos = 0;
+  var numero = parseInt(document.getElementById("numero").value);
+  if(numero == numeroMaquina){
+    alert("ganó en ", intentos, "intentos");
+  }else{
+    window.intentos++;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+
 /*Al comenzar el juego generamos un número 
 secreto del 1 al 100, en la pantalla del juego
  dispondremos de un cuadro de texto para ingresar
@@ -6,7 +49,7 @@ secreto del 1 al 100, en la pantalla del juego
   por terminado el juego con un mensaje similar a este: 
 “Usted es un ganador!!! y en solo X intentos”.
 de no ser igual se debe informar si “falta…”  para llegar al número secreto  o si “se pasó…”  del número secreto.
-*/
+
 var numeroSecreto; 
 var contadorIntentos;
 
@@ -23,4 +66,4 @@ function verificar()
 {
 	
 	
-}
+} */
