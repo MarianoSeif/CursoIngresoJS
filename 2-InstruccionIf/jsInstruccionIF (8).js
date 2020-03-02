@@ -9,7 +9,7 @@ function mostrar()
     console.log(estadoCivil);
     
     if(edad>17 && estadoCivil == "Soltero"){
-        alert("demasiado joven para...");
+        alert("Es soltero y...");
     }
     
 
