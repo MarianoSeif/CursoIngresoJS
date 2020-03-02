@@ -1,4 +1,20 @@
-var miTemporizador ;
+var timer;
+
+function inicio()
+{
+	
+	timer = setTimeout(myFunc, 3000);
+}
+
+function myFunc()
+{
+	alert('Hello!');
+	clearTimeout(timer);
+}
+
+
+
+/*var miTemporizador ;
 var contador=0;
 
 function inicio()
@@ -20,4 +36,4 @@ function fin()
 	alert("function fin.");
 	clearTimeout(miIntervalo);
 
-}//FIN DE LA FUNCIÓN fin
+}//FIN DE LA FUNCIÓN fin*/
