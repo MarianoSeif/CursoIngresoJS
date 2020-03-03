@@ -7,6 +7,10 @@ function mostrar()
 
     while (continuar == 's') {
         letra = prompt('Ingrese letra: ');
+        while(!((letra>='A' && letra<='Z') || (letra>='a' && letra<='z'))){
+            letra = prompt('Ingrese letra nuevamente: ');
+        }
+        
         numero = parseInt(prompt('Ingrese numero: '));
         while (numero<-100 || numero>100 || isNaN(numero)){
             numero = parseInt(prompt('Ingrese numero: '));
