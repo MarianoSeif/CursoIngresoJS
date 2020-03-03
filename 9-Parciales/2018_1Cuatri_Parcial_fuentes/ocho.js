@@ -27,7 +27,8 @@ function mostrar()
         if (numero<minimo){
             minimo = numero;
             letraMinimo = letra;
-        }
+        } 
+        
         if (numero>maximo){
             maximo = numero;
             letraMaximo = letra;

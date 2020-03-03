@@ -6,6 +6,9 @@ function mostrar()
 
     while(continuar=='s'){
         nombre = prompt('Ingrese nombre: ');
+        while(nombre==null || nombre ==''){
+            nombre = prompt('Incorrecto. Ingrese nombre: ');
+        }
         
         peso = parseInt(prompt('Ingrese el peso: '));
         while(peso<1 || peso>1000 || isNaN(peso)){

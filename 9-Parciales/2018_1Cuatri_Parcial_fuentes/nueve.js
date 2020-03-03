@@ -1,44 +1,42 @@
 function mostrar()
 {
     var continuar = 's';
-    var marcas = new Array();
-    var pesos = new Array();
-    var temperaturas = new Array();
-    var marca, peso, temperatura, cantTemperaturasPares = 0, marcaMasPesado, acumuladorPeso = 0, pesoMasPesado;
-    var pesoMasLiviano, productosBajoCero = 0, contador= 0;
-    var flag = true;
-    
+    var marcas, pesos, temperaturas;
+    var marca, peso, temperatura, cantTemperaturasPares = 0, marcaMasPesado, acumuladorPeso = 0, pesoMasPesado = 0;
+    var pesoMasLiviano = 0, productosBajoCero = 0, contador= 0;
+        
 
     while (continuar=='s'){
 
-        marca = prompt('Ingrese marca: ')
-        marcas.push(marca);
-        
+        marca = prompt('Ingrese marca: ');
+        while(marca==null || marca==''){
+            marca = prompt('Incorrecto. Ingrese marca nuevamente: ');
+        }
+                
         peso = parseInt(prompt('Ingrese peso (entre 1 y 100): '));
         while (peso<1 || peso>100 || isNaN(peso)){
-            peso = parseInt(prompt('Ingrese peso (entre 1 y 100): '));
+            peso = parseInt(prompt('Incorrecto. Ingrese peso (entre 1 y 100): '));
         }
-        pesos.push(peso);
-        if (flag){
+        
+        temperatura = parseInt(prompt('Ingrese temperatura (entre -30 y 30): '));
+        while (temperatura<-30 || temperatura >30 || isNaN(temperatura)){
+            temperatura = parseInt(prompt('Incorrecto. Ingrese temperatura (entre -30 y 30): '));
+        }
+
+        if (pesoMasPesado == 0){
             pesoMasPesado = peso;
-            pesoMasLiviano = peso;
-            flag = false;
+            pesoMasLiviano = peso;        
         }
         
         if (peso>pesoMasPesado){
             pesoMasPesado = peso;
             marcaMasPesado = marca;
-        }
-        if (peso<pesoMasLiviano){
+        }else if (peso<pesoMasLiviano){
             pesoMasLiviano = peso;
         }
+        
         acumuladorPeso += peso;
         
-        temperatura = parseInt(prompt('Ingrese temperatura (entre -30 y 30): '));
-        while (temperatura<-30 || temperatura >30 || isNaN(temperatura)){
-            temperatura = parseInt(prompt('Ingrese temperatura (entre -30 y 30): '));
-        }
-        temperaturas.push(temperatura);
         if ((temperatura%2) ==0){
             cantTemperaturasPares++;
         }
