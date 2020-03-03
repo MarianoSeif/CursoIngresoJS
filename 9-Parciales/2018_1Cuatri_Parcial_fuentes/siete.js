@@ -27,7 +27,7 @@ function mostrar()
         }
     }
 
-    alert('Promedio: '+(acumulador/5));
-    alert('mas baja: '+minimo+' sexo: '+sexoDelMinimo);
-    alert('varones mayor o igual a 6: '+cantVaronesMayorSeis);
+    alert('Promedio: '+(acumulador/5) + '\n'+
+          'mas baja: '+minimo+' sexo: '+sexoDelMinimo+'\n'+
+          'varones mayor o igual a 6: '+cantVaronesMayorSeis);
 }
